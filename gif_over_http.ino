@@ -194,9 +194,9 @@ void span(uint16_t *src, int16_t x, int16_t y, int16_t width) {
 void setup() {
   //Initialize serial and wait for port to open:
   Serial.begin(9600);
-  while (!Serial) {
-    ;  // wait for serial port to connect. Needed for native USB port only
-  }
+  // while (!Serial) {
+  //   ;  // wait for serial port to connect. Needed for native USB port only
+  // }
 
   // Initialize matrix...
   ProtomatterStatus matrix_status = matrix.begin();
